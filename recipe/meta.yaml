@@ -1,6 +1,5 @@
 {% set version = '0.1.7' %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-parglm
@@ -13,7 +12,7 @@ source:
   sha256: c3371a5e75df88b37b031ae8f73ccc693835469e6d66dc0a43fd68f0e4d57686
 
 build:
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
@@ -43,7 +42,6 @@ requirements:
     - r-rcpp
     - r-rcpparmadillo
   run:
-    - {{ native }}libwinpthread-git  # [win]
     - r-base
     - r-matrix
     - r-rcpp
