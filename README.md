@@ -7,20 +7,24 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-parglm-feedst
 About r-parglm
 --------------
 
-Home: https://github.com/boennecd/parglm
+Home: https://remlapmot.github.io/parglm/
 
 Package license: GPL-2.0-only
 
 Summary: Provides a parallel estimation method for generalized linear models without compiling with a multithreaded LAPACK or BLAS.
+
+Development: https://github.com/remlapmot/parglm
 
 About r-parglm
 --------------
 
-Home: https://github.com/boennecd/parglm
+Home: https://remlapmot.github.io/parglm/
 
 Package license: GPL-2.0-only
 
 Summary: Provides a parallel estimation method for generalized linear models without compiling with a multithreaded LAPACK or BLAS.
+
+Development: https://github.com/remlapmot/parglm
 
 Current build status
 ====================
