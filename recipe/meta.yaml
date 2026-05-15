@@ -41,11 +41,13 @@ requirements:
     - r-matrix
     - r-rcpp
     - r-rcpparmadillo
+    - r-parallelly
   run:
     - r-base
     - r-matrix
     - r-rcpp
     - r-rcpparmadillo
+    - r-parallelly
 
 test:
   commands:
@@ -53,7 +55,8 @@ test:
     - "\"%R%\" -e \"library('parglm')\""  # [win]
 
 about:
-  home: https://github.com/boennecd/parglm
+  home: https://remlapmot.github.io/parglm/
+  dev_url: https://github.com/remlapmot/parglm
   license: GPL-2.0-only
   summary: Provides a parallel estimation method for generalized linear models without compiling with a multithreaded LAPACK or BLAS.
   license_family: GPL2
