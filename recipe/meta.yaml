@@ -1,4 +1,4 @@
-{% set version = "0.1.8" %}
+{% set version = "0.1.9" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/parglm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/parglm/parglm_{{ version }}.tar.gz
-  sha256: 43ab2638d03e853c0457c0623b3f4917d951be7519c7be8d13a76634de0b5e45
+  sha256: 110e25ed40adfdd035ad606192a27512a8a167ae03c890c3f30d941b8101007f
 
 build:
   number: 0
@@ -41,11 +41,13 @@ requirements:
     - r-matrix
     - r-rcpp
     - r-rcpparmadillo
+    - r-parallelly
   run:
     - r-base
     - r-matrix
     - r-rcpp
     - r-rcpparmadillo
+    - r-parallelly
 
 test:
   commands:
@@ -53,7 +55,8 @@ test:
     - "\"%R%\" -e \"library('parglm')\""  # [win]
 
 about:
-  home: https://github.com/boennecd/parglm
+  home: https://remlapmot.github.io/parglm/
+  dev_url: https://github.com/remlapmot/parglm
   license: GPL-2.0-only
   summary: Provides a parallel estimation method for generalized linear models without compiling with a multithreaded LAPACK or BLAS.
   license_family: GPL2
