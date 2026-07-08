@@ -1,4 +1,4 @@
-{% set version = "0.1.10" %}
+{% set version = "0.2.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/parglm_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/parglm/parglm_{{ version }}.tar.gz
-  sha256: 6c16d70396af1cd4fc5da38a2ebf793c12681731e94f4744b5db37193a649a3f
+  sha256: db01224ce1a32389752ba6c22df494032d1cafeb4853dc7c051fd1f072db8c13
 
 build:
   number: 0
